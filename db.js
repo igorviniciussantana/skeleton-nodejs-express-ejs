@@ -1,5 +1,5 @@
 let connect = function( ){
-if ( golbal.connection){
+if ( global.connection){
 return global.connection.connect();
 }
 
