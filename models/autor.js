@@ -11,7 +11,7 @@ class Autor {
 
   static async selecionarAutor() {
     const connect = await db.connect();
-    return await connect.query("SELECT * FROM autores");
+    return await connect.query("SELECT * FROM autores ORDER BY id");
   }
 
   static async atualizarAutor(data) {
